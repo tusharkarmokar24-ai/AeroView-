@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0a0a0f;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #1e1e2e, #232339);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #bbb;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.project-card {
+  background: #181828;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #5ee7df, 0 0 30px #b490ca;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #5ee7df, #b490ca);
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background: #111;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.content ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.content li {
+  margin: 0.5rem 0;
+}
+
+.back {
+  color: #5ee7df;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.goto-dashboard {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: linear-gradient(90deg,#ff00b8,#8000ff);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(255,0,180,0.4);
+    transition: 0.2s;
+}
+
+.goto-dashboard:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 18px rgba(255,0,180,0.7);
+}
+
+/* SPACE BACKGROUND */
+.star-bg {
+  background: radial-gradient(circle at 20% 20%, #0a0f1a, #05060a 80%);
+  background-attachment: fixed;
+}
+
+/* SMOOTH BOOT FADE */
+.boot-fade {
+  animation: bootUp 1s ease-out;
+}
+@keyframes bootUp {
+  from { opacity: 0; filter: blur(4px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+/* HEADER WITH SCI-FI GLOW */
+.glow-header {
+  padding: 2rem 1rem;
+  background: rgba(10, 15, 25, 0.6);
+  border-bottom: 1px solid #00ffe788;
+  box-shadow: 0 0 25px #00ffe733, inset 0 0 10px #00ffe722;
+  backdrop-filter: blur(6px);
+}
+
+/* HOLOGRAPHIC TEXT */
+.holo-text {
+  color: #dff7ff;
+  text-shadow: 0 0 15px #00e0ff66;
+}
+
+/* UNDERLINE SCANLINE */
+.scan-title {
+  position: relative;
+  display: inline-block;
+}
+.scan-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; left: 0;
+  width: 100%; height: 2px;
+  background: #00eaff;
+  animation: scan 2.4s infinite linear;
+}
+@keyframes scan {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+/* SUBTEXT GLOW */
+.subtle-glow {
+  color: #a8c7ff;
+  text-shadow: 0 0 6px #00d9ff44;
+}
+
+/* SECTION TITLES */
+.section-title {
+  color: #b8eaff;
+  font-size: 1.7rem;
+  text-shadow: 0 0 15px #00eeff77;
+  margin-bottom: 1rem;
+}
+
+/* TEAM CARDS – NEON BOXES */
+.holo-box {
+  background: rgba(15, 20, 35, 0.7);
+  border: 1px solid #00ffe744;
+  border-radius: 15px;
+  box-shadow: 0 0 18px #00eaff33, inset 0 0 10px #00eaff22;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease;
+}
+.holo-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 28px #00f7ff77;
+}
+
+/* PROJECT CARD TITLES */
+.team-name {
+  color: #d9f6ff;
+  text-shadow: 0 0 10px #00eaff66;
+}
+.team-role {
+  color: #9abed8;
+}
+
+/* BUTTON – SCI-FI NEON */
+.neon-btn {
+  background: transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #5ee7df;
+  color: #5ee7df;
+  box-shadow: 0 0 10px #5ee7df55, inset 0 0 5px #5ee7df33;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+.neon-btn:hover {
+  background: #5ee7df;
+  color: #021015;
+  box-shadow: 0 0 20px #5ee7dfaa;
+  transform: scale(1.05);
+}
+/* FOOTER */
+.nasa-footer {
+  background: #01040a;
+  padding: 1rem;
+  border-top: 1px solid #00eaff33;
+  box-shadow: 0 -5px 15px #00eaff22;
+}
+.footer-text {
+  color: #8eb5c7;
+  text-shadow: 0 0 5px #00d9ff33;
+}

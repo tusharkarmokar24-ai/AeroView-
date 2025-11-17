@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Monitoring System</title>
+    <link rel="stylesheet" href="project-env.css">
+</head>
+
+<body class="boot-fade">
+  <header class="glow-header">
+    <h1 class="scan-title">🌱 Environment Monitoring System</h1>
+    <a href="index.html" class="back neon-link">← Back to Home</a>
+  </header>
+  
+  <section class="content holo-fade">
+    <p class="holo-text">
+      This project uses low-cost sensors connected to an ESP32 to record temperature and humidity.
+      The readings are sent to Firebase in real-time and visualized through a web dashboard.
+    </p>
+    
+    <a href="/dashboard/dashboard.html" class="goto-dashboard cyber-btn">🌐 View Live Dashboard</a>
+    
+    <div class="preview-section">
+      <h2 class="scan-title">📸 Project Build Preview</h2>
+      <div class="preview-box neon-box">
+        <img src="/images/project.jpg" alt="Project Preview" class="preview-img slide-in">
+      </div>
+    </div>
+    
+    <ul class="spec-list">
+      <li class="spec-item">🧩 ESP32 + DHT11</li>
+      <li class="spec-item">☁️ Firebase Realtime Database for cloud sync</li>
+      <li class="spec-item">📊 Dashboard with live updates and charts</li>
+    </ul>
+    
+    <h2 class="scan-title">THE PROBLEM</h2>
+    <p class="holo-text">
+      Across homes, classrooms, offices, labs, and storage spaces, people make decisions about their environment based purely on guesswork. Most indoor spaces still have no real-time visibility into basic conditions like temperature and humidity. When the environment goes out of balance, it leads to discomfort, health issues, reduced productivity, damaged electronics, spoiled materials, and inconsistent conditions for experiments or equipment.
+      <br>
+      Despite how important these factors are, existing monitoring systems are either too expensive, too complex, or not accessible to everyday users. There’s no simple, low-cost, cloud-connected tool that lets anyone track and understand their indoor environment from anywhere.
+      <br>
+      This gap leaves individuals, schools, and workplaces blind to changes happening around them — until it’s too late to act. The world needs a small, affordable, reliable device that brings environmental data to everyone, not just to high-budget labs or industrial setups.
+    </p>
+    
+    <h2 class="scan-title">HOW AEROVIEW SOLVES THIS</h2>
+    <p class="holo-text">
+      AeroView goes beyond simple monitoring by combining real-time sensing with intelligent analysis.
+      <br><br>
+      The device continuously tracks temperature and humidity and instantly sends the data to the cloud, giving users live access from anywhere. But AeroView doesn’t stop at showing numbers — it interprets them. Using an AI-driven risk assessment model, AeroView analyzes environmental patterns and identifies potential issues before they escalate.
+      <br><br>
+      At the core of the system is the Atmos Score, a rigorously designed formula that converts raw sensor readings into a single, easy-to-understand indicator of environmental quality. This helps users instantly understand whether their space is stable, at risk, or needs immediate attention.
+      <br><br>
+      To make the experience even more accessible, AeroView includes 24/7 AI assistance. Users can ask AeroAI anything — from simple questions to detailed guidance — and receive instant, helpful responses tailored to their situation.
+      <br><br>
+      By combining IoT sensing, cloud connectivity, and intelligent analysis, AeroView delivers an affordable and reliable way for anyone to understand, predict, and improve their indoor environment.
+    </p>
+    
+    <h2 class="scan-title">HOW IT WORKS</h2>
+    <p class="holo-text">
+      AeroView brings together hardware, cloud services, and AI to deliver real-time insights with minimal setup.
+      <br><br>
+      The device continuously measures temperature and humidity using onboard sensors. These readings are securely sent to the cloud, where AeroView processes and stores the data. Users can view live conditions from any device through a clean, intuitive dashboard.
+      <br><br>
+      In the cloud, AeroAI analyzes the incoming data using our risk-assessment model and calculates the Atmos Score — a single metric that reflects the overall environmental health of the space.
+      <br><br>
+      Users can interact with AeroAI at any time to understand trends, identify potential issues, or ask questions about their environment. The system responds instantly with clear, actionable guidance.
+      <br><br>
+      Everything works together seamlessly, giving users constant awareness and AI-powered insights without any technical complexity.
+    </p>
+  </section>
+  <footer class="nasa-footer">
+    <p class="nasa-footer-text">
+      Made by somnath pan, soumyakanta sen, sounake simlai, Tushar karmakar with 🧠
+    </p>
+  </footer>
+</body>
+
+</html>
