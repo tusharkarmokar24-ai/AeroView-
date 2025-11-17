@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AeroView</title>
+<link rel="stylesheet" href="/dashboard/dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- AeroView Header -->
+    <h1 class="title">Aero<span>View</span></h1>
+    <p class="tagline">Tracking temperature and humidity to reveal indoor comfort and risks.</p>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card">
+            <h2>Temperature 🌡️</h2>
+            <p class="value" id="tempValue">32°C</p>
+        </div>
+
+        <div class="card">
+            <h2>Humidity</h2>
+            <p class="value" id="humValue">47%</p>
+        </div>
+
+        <div class="card">
+            <h2>Atmos Score</h2>
+            <p class="value" id="scoreValue">89</p>
+        </div>
+    </div>
+
+    <!-- AeroAI Section -->
+    <h1 class="ai-title">Aero<span>AI</span></h1>
+
+    <div class="ai-box">
+        <p id="aiResponse">
+            Current Temperature & Humidity Seems Chill.<br>
+            Your Atmos Score Is Also Healthy, No Risks At This Point.
+        </p>
+    </div>
+
+    <!-- Ask AeroAI -->
+    <div class="ask-area">
+        <input id="askInput" type="text" placeholder="Ask AeroAI..." autocomplete="off">
+        <button id="askBtn">Ask</button>
+    </div>
+
+    <!-- Footer -->
+    <p class="credit">
+        MADE BY SOMNATH PAN, SOUNAKE SIMALI,SOUMYAKANTA SEN TUSHAR KARMAKAR WITH 🔥💡
+    </p>
+
+    <a class="visit-btn" href="/public/project-env.html">VISIT PROJECT AEROVIEW</a>
+    <a class="visit-btn" href="/public/index.html">VISIT OUR TEAM</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

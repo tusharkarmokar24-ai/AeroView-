@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* TITLE */
+.title, .ai-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #ff006e, #9d00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title span, .ai-title span {
+    background: linear-gradient(90deg, #ae00ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+input:focus{
+    outline:none;
+    border:1px solid #FFC7FD;
+}
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.card {
+    padding: 20px 15px;
+    width: 180px;
+    border-radius: 15px;
+    
+    /* NEW: Gradient Border */
+    border: 1px solid #FF0EF4;
+    /* Glow */
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.25);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.value {
+    margin-top: 10px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #ffe43c;
+}
+
+/* AEROAI */
+.ai-box {
+    background: white;
+    color: black;
+    padding: 18px;
+    border-radius: 18px;
+    margin: 20px auto;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 0 12px rgba(255,0,150,0.4);
+    max-width: 650px;
+}
+
+/* Ask section */
+.ask-area {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ask-area input {
+    width: 70%;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 2px solid #ff00f5;
+    background: #000;
+    color: white;
+    font-size: 1rem;
+}
+
+.ask-area button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff00b8, #8000ff);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ask-area button:hover {
+    transform: scale(1.06);
+}
+
+/* Footer */
+.credit {
+    margin-top: 40px;
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+.visit-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 2px solid #ff00d4;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .title, .ai-title {
+        font-size: 2.3rem;
+    }
+    .card {
+        width: 45%;
+    }
+    .value {
+        font-size: 2rem;
+    }
+}
